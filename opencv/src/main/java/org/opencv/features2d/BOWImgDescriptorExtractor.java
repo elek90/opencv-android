@@ -1,30 +1,36 @@
-
 //
 // This file is auto-generated. Please don't modify it!
 //
 package org.opencv.features2d;
 
 import java.util.ArrayList;
+import java.util.List;
 import org.opencv.core.Mat;
 import org.opencv.core.MatOfKeyPoint;
+import org.opencv.utils.Converters;
 
 // C++: class BOWImgDescriptorExtractor
 //javadoc: BOWImgDescriptorExtractor
+
 public class BOWImgDescriptorExtractor {
 
     protected final long nativeObj;
     protected BOWImgDescriptorExtractor(long addr) { nativeObj = addr; }
 
+    public long getNativeObjAddr() { return nativeObj; }
+
+    // internal usage only
+    public static BOWImgDescriptorExtractor __fromPtr__(long addr) { return new BOWImgDescriptorExtractor(addr); }
 
     //
-    // C++:   BOWImgDescriptorExtractor(Ptr_DescriptorExtractor dextractor, Ptr_DescriptorMatcher dmatcher)
+    // C++:   cv::BOWImgDescriptorExtractor::BOWImgDescriptorExtractor(Ptr_DescriptorExtractor dextractor, Ptr_DescriptorMatcher dmatcher)
     //
 
     // Unknown type 'Ptr_DescriptorExtractor' (I), skipping the function
 
 
     //
-    // C++:  Mat getVocabulary()
+    // C++:  Mat cv::BOWImgDescriptorExtractor::getVocabulary()
     //
 
     //javadoc: BOWImgDescriptorExtractor::getVocabulary()
@@ -38,7 +44,7 @@ public class BOWImgDescriptorExtractor {
 
 
     //
-    // C++:  int descriptorSize()
+    // C++:  int cv::BOWImgDescriptorExtractor::descriptorSize()
     //
 
     //javadoc: BOWImgDescriptorExtractor::descriptorSize()
@@ -52,7 +58,7 @@ public class BOWImgDescriptorExtractor {
 
 
     //
-    // C++:  int descriptorType()
+    // C++:  int cv::BOWImgDescriptorExtractor::descriptorType()
     //
 
     //javadoc: BOWImgDescriptorExtractor::descriptorType()
@@ -66,10 +72,10 @@ public class BOWImgDescriptorExtractor {
 
 
     //
-    // C++:  void compute2(Mat image, vector_KeyPoint keypoints, Mat& imgDescriptor)
+    // C++:  void cv::BOWImgDescriptorExtractor::compute2(Mat image, vector_KeyPoint keypoints, Mat& imgDescriptor)
     //
 
-    //javadoc: BOWImgDescriptorExtractor::compute2(image, keypoints, imgDescriptor)
+    //javadoc: BOWImgDescriptorExtractor::compute(image, keypoints, imgDescriptor)
     public  void compute(Mat image, MatOfKeyPoint keypoints, Mat imgDescriptor)
     {
         Mat keypoints_mat = keypoints;
@@ -80,7 +86,7 @@ public class BOWImgDescriptorExtractor {
 
 
     //
-    // C++:  void setVocabulary(Mat vocabulary)
+    // C++:  void cv::BOWImgDescriptorExtractor::setVocabulary(Mat vocabulary)
     //
 
     //javadoc: BOWImgDescriptorExtractor::setVocabulary(vocabulary)
@@ -100,19 +106,19 @@ public class BOWImgDescriptorExtractor {
 
 
 
-    // C++:  Mat getVocabulary()
+    // C++:  Mat cv::BOWImgDescriptorExtractor::getVocabulary()
     private static native long getVocabulary_0(long nativeObj);
 
-    // C++:  int descriptorSize()
+    // C++:  int cv::BOWImgDescriptorExtractor::descriptorSize()
     private static native int descriptorSize_0(long nativeObj);
 
-    // C++:  int descriptorType()
+    // C++:  int cv::BOWImgDescriptorExtractor::descriptorType()
     private static native int descriptorType_0(long nativeObj);
 
-    // C++:  void compute2(Mat image, vector_KeyPoint keypoints, Mat& imgDescriptor)
+    // C++:  void cv::BOWImgDescriptorExtractor::compute2(Mat image, vector_KeyPoint keypoints, Mat& imgDescriptor)
     private static native void compute_0(long nativeObj, long image_nativeObj, long keypoints_mat_nativeObj, long imgDescriptor_nativeObj);
 
-    // C++:  void setVocabulary(Mat vocabulary)
+    // C++:  void cv::BOWImgDescriptorExtractor::setVocabulary(Mat vocabulary)
     private static native void setVocabulary_0(long nativeObj, long vocabulary_nativeObj);
 
     // native support for java finalize()

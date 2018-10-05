@@ -1,4 +1,3 @@
-
 //
 // This file is auto-generated. Please don't modify it!
 //
@@ -8,14 +7,19 @@ package org.opencv.features2d;
 
 // C++: class Params
 //javadoc: Params
+
 public class Params {
 
     protected final long nativeObj;
     protected Params(long addr) { nativeObj = addr; }
 
+    public long getNativeObjAddr() { return nativeObj; }
+
+    // internal usage only
+    public static Params __fromPtr__(long addr) { return new Params(addr); }
 
     //
-    // C++:   Params()
+    // C++:   cv::SimpleBlobDetector::Params::Params()
     //
 
     //javadoc: Params::Params()
@@ -553,7 +557,7 @@ public class Params {
 
 
 
-    // C++:   Params()
+    // C++:   cv::SimpleBlobDetector::Params::Params()
     private static native long Params_0();
 
     // C++: float Params::thresholdStep
